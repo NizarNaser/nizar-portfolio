@@ -4,5 +4,15 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Nizar-Portfolio/',
-})
+  base: '/nizar-portfolio/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'framer-motion'] // قسم الأكواد الخاصة بالمكتبات
+        }
+      }
+    }
+  }
+});
+

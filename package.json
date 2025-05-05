@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nizarnaser.github.io/Nizar-Portfolio",
+  "homepage": "https://nizarnaser.github.io/nizar-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
