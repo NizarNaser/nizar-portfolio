@@ -67,6 +67,14 @@ const Main = () => {
         >
           Node & Express
         </button>
+        <button
+          onClick={() => {
+            handleClick("wordpress");
+          }}
+          className={currentActive === "wordpress" ? "active" : null}
+        >
+          Wordpress Plugin
+        </button>
       </section>
 
       <section className=" flex right-section">
@@ -81,13 +89,12 @@ const Main = () => {
                 key={item.imgPath}
                 className="  card"
               >
-                <img width={266} src={item.imgPath} alt="" />
+                <img width={266} src={item.imgPath} alt={item.projectTitle} />
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
                   <p className="sub-title">
-                    Lorem ipsum dolor sit amet consectetur elit adipisicing . Ex
-                    tempore dolor in, accusantium laudantium accusamus.
+                    {item.subTitle}
                   </p>
 
                   <div className="flex icons">
@@ -96,7 +103,7 @@ const Main = () => {
                       <div className="icon-github"></div>
                     </div>
 
-                    <a className="link flex" href="">
+                    <a className="link flex" target="_blank" href={item.urlItem}>
                       more
                       <span
                         style={{ alignSelf: "end" }}
