@@ -4,14 +4,14 @@ export const myProjects = [
     category: ["react"],
     imgPath: "./images/1.jpg",
     subTitle:"Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.",
-    urlItem:"https://deluxe-auto-one.vercel.app/"
+    urlItem:"https://nizarnaser.github.io/admin-car-delux/"
   },
   {
     projectTitle: "react & css project",
     category: ["react", "css"],
     imgPath: "./images/2.jpg",
     subTitle:"Lorem ipsum dolor sit amet consectetur elit adipisicing . Extempore dolor in, accusantium laudantium accusamus.",
-    urlItem:"https://deluxe-auto-one.vercel.app/"
+    urlItem:"https://nizarnaser.github.io/admin-dubai"
 
   },
   { projectTitle: "css project", 
